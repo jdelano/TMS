@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace TMS.Business.Core
@@ -11,6 +12,7 @@ namespace TMS.Business.Core
         public string UpdatedBy { get; set; }
         public DateTime UpdatedOn { get; set; }
 
+        [NotMapped]
         public int State { get; set; }
 
         public enum EntityState
