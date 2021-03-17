@@ -4,9 +4,8 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using TMS.Business.Core;
 
-namespace TMS.Business.Entities
+namespace TMS.Common.Entities
 {
     [Description("To store Property information")]
     [Table("Property")]

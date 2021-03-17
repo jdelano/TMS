@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TMS.Common.Core;
+using TMS.Common.Entities;
 
 namespace TMS.Business.Core
 {

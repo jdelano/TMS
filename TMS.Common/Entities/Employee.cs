@@ -1,5 +1,4 @@
-﻿using TMS.Business.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -7,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TMS.Business.Entities
+namespace TMS.Common.Entities
 {
     [Description("To store Employee information")]
     [Table("Employee")]

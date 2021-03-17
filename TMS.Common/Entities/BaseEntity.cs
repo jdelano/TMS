@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace TMS.Business.Core
+namespace TMS.Common.Entities
 {
     public abstract class BaseEntity
     {

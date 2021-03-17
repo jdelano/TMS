@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using TMS.Business.Core;
-using TMS.Business.Entities;
+using TMS.Common.Entities;
 
 namespace TMS.Business.Managers
 {

@@ -1,5 +1,4 @@
-﻿using TMS.Business.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -7,11 +6,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TMS.Business.Entities
+namespace TMS.Common.Entities
 {
-    [Description("To store Worker who will be assigned for Job")]
-    [Table("JobWorker")]
-    public class JobWorker : BaseEntity
+    [Description("To store Tasks related to particular Job")]
+    [Table("JobTask")]
+    public class JobTask : BaseEntity
     {
         [Key]
         public long ID { get; set; }
@@ -21,11 +20,8 @@ namespace TMS.Business.Entities
         [ForeignKey("JobID")]
         public virtual Job Job { get; set; }
 
-        public long EmployeeID { get; set; }
-
-        [ForeignKey("EmployeeID")]
-        public virtual Employee Employee { get; set; }
-
+        [MaxLength(500)]
+        public string TaskDescription { get; set; }
 
     }
 }
