@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TMS.Common.Core
+namespace TMS.DataAccess.Core
 {
     public interface IUnitOfWork
     {
